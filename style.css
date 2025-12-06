@@ -890,3 +890,23 @@ input:checked + .slider:before {
         font-size: 28px;
     }
 }
+/* Add this to your style.css file */
+html, body {
+  height: 100% !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow: auto !important;
+}
+
+#game-container {
+  min-height: 100vh !important;
+  padding-bottom: 50px !important;
+}
+
+/* Make buttons visible */
+button, .btn, .start-btn {
+  position: relative !important;
+  z-index: 1000 !important;
+  margin-top: 20px !important;
+}
