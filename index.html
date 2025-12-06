@@ -369,37 +369,5 @@
     <script  src="./script.js"></script>
 
   </body>
-  
-</html>
-
-<!-- ========== COIN & STREAK SYSTEM ========== -->
-<div id="coin-system" style="position:fixed; top:10px; right:10px; z-index:1000;">
-  <div style="background:gold; padding:8px 15px; border-radius:20px; font-weight:bold;">
-    🪙 <span id="coin-count">50</span>
-    <div style="font-size:12px; margin-top:2px;">🔥 <span id="streak-count">0</span></div>
-  </div>
-</div>
-
-<!-- ========== CONTROL BUTTONS ========== -->
-<div style="position:fixed; bottom:20px; right:20px; display:flex; flex-direction:column; gap:10px; z-index:1000;">
-  <button onclick="useHint()" style="background:#9C27B0; color:white; padding:10px; border:none; border-radius:10px;">
-    💡 Hint (20 coins)
-  </button>
-  <button onclick="useUndo()" style="background:#FF9800; color:white; padding:10px; border:none; border-radius:10px;">
-    ↩️ Undo (15 coins)
-  </button>
-  <button onclick="showThemes()" style="background:#2196F3; color:white; padding:10px; border:none; border-radius:10px;">
-    🎨 Themes
-  </button>
-</div>
-
-<!-- ========== THEME SELECTOR (HIDDEN) ========== -->
-<div id="theme-selector" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background:white; padding:20px; border-radius:15px; z-index:2000;">
-  <h3>🎨 Select Theme (100 coins)</h3>
-  <button onclick="buyTheme('default')">Default</button>
-  <button onclick="buyTheme('dark')">Dark Mode</button>
-  <button onclick="buyTheme('nature')">Nature</button>
-  <button onclick="buyTheme('space')">Space</button>
-  <br><br>
-  <button onclick="closeThemes()" style="background:gray;">Close</button>
-</div>
+  <!-- SCROLL SPACER -->
+<div style="height: 100px; width: 100%;"></div>
