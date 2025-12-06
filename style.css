@@ -919,3 +919,33 @@ button, .btn, .start-btn {
   
   .difficulty-screen {
     padding-top: 10px !important;
+/* ========== COIN ANIMATION ========== */
+@keyframes coinBounce {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.coin-animate {
+  animation: coinBounce 0.5s ease-in-out;
+}
+
+/* ========== STREAK GLOW ========== */
+.streak-glow {
+  box-shadow: 0 0 15px #FF5722;
+}
+
+/* ========== THEME STYLES ========== */
+.theme-dark {
+  background: #121212 !important;
+  color: #FFFFFF !important;
+}
+
+.theme-nature {
+  background: linear-gradient(135deg, #2E7D32, #81C784) !important;
+}
+
+.theme-space {
+  background: linear-gradient(135deg, #0D47A1, #311B92) !important;
+  color: white !important;
+}
