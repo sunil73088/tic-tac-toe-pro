@@ -738,3 +738,25 @@ window.toggleSound = toggleSound;
 window.showSettings = showSettings;
 window.resetStats = resetStats;
 window.startGameWithAI = startGameWithAI;
+// ========== AUTO SCROLL TO BUTTONS ==========
+function ensureButtonsVisible() {
+  setTimeout(() => {
+    const buttons = document.querySelectorAll('button');
+    if(buttons.length > 0) {
+      const lastButton = buttons[buttons.length - 1];
+      lastButton.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    }
+  }, 500);
+}
+
+// Call this when game loads
+document.addEventListener('DOMContentLoaded', function() {
+  ensureButtonsVisible();
+  
+  // Also call when difficulty is selected
+  const difficultyButtons = document.querySelectorAll('[onclick*="difficulty"]');
+  difficultyButtons.forEach(btn => {
+    const oldClick = btn.getAttribute('onclick');
+    btn.setAttribute('onclick', oldClick + '; ensureButtonsVisible();');
+  });
+});
