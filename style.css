@@ -948,4 +948,8 @@ button, .btn, .start-btn {
 .theme-space {
   background: linear-gradient(135deg, #0D47A1, #311B92) !important;
   color: white !important;
+}body { 
+  zoom: 0.8; 
+  overflow-y: scroll !important; 
+  padding-bottom: 150px !important; 
 }
