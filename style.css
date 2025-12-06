@@ -909,4 +909,13 @@ button, .btn, .start-btn {
   position: relative !important;
   z-index: 1000 !important;
   margin-top: 20px !important;
-}
+}/* ZOOM OUT THE GAME */
+@media screen and (max-height: 700px) {
+  #game-container {
+    transform: scale(0.85) !important;
+    transform-origin: top center !important;
+    margin-top: -20px !important;
+  }
+  
+  .difficulty-screen {
+    padding-top: 10px !important;
